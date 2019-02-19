@@ -126,9 +126,9 @@
     <a href="javascript:;" class="barrita" >☰</a>
 
 <ul class="sidenav">
-    <li> <a id="menu1" href="javascript:;" click="menu1()"> Menu 1 </a> </li>
-    <li> <a id="menu2" href="javascript:;" > Menu 2</a> </li>
-    <li> <a id="menu3" href="javascript:;" > Menu 3</a> </li>
+    <li> <a class="m1" id="menu1" href="javascript:;" click="menu1()"> Menu 1 </a> </li>
+    <li> <a class="m2" id="menu2" href="javascript:;" > Menu 2</a> </li>
+    <li> <a class="m3"id="menu3" href="javascript:;" > Menu 3</a> </li>
 </ul> 
 
 <div id="contenido1" class="content oculto">
@@ -155,8 +155,9 @@ $(document).ready(function(){
     $("#menu3").removeClass("active")
     $("#contenido1").removeClass("oculto")
     $("#contenido2").addClass("oculto")
-    $("#contenido3").addClass("oculto")
+    $("#contenido3").addClass("oculto");
   });
+
   $("#menu2").click(function(){
     $("#menu1").removeClass("active")
     $("#menu2").addClass("active");
@@ -174,11 +175,32 @@ $(document).ready(function(){
     $("#contenido2").addClass("oculto")
   });
 
-  $(".barrita").on("click",function(){
-    $("#menu1").toggle();
-    $("#menu2").toggle();
-    $("#menu3").toggle();
-  });
+    $(".barrita").on("click",function(){
+        $("#menu1").toggle();
+        $("#menu2").toggle();
+        $("#menu3").toggle();
+    });
+
+
+
+    $(".m1").click(function(){
+        $("#menu1").toggle();
+        $("#menu2").toggle();
+        $("#menu3").toggle();
+    });
+    $(".m2").click(function(){
+        $("#menu1").toggle();
+        $("#menu2").toggle();
+        $("#menu3").toggle();
+    });
+    $(".m3").click(function(){
+        $("#menu1").toggle();
+        $("#menu2").toggle();
+        $("#menu3").toggle();
+    });
+
+    
+
 });
 
 </script>

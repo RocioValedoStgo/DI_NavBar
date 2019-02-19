@@ -79,9 +79,6 @@
             height: 360px;
         } */
 
-        .barrita {
-            
-        }
         }
 
         @media screen and (max-width: 450px) {
@@ -187,23 +184,27 @@ $(document).ready(function(){
 
 
     $(".m1").click(function(){
-        $("#menu1").toggle();
-        $("#menu2").toggle();
-        $("#menu3").toggle();
+        if ($(window).width() <=450) {
+            $("#menu1").toggle();
+            $("#menu2").toggle();
+            $("#menu3").toggle();
+        }
+        
     });
     $(".m2").click(function(){
-        $("#menu1").toggle();
-        $("#menu2").toggle();
-        $("#menu3").toggle();
+        if ($(window).width() <=450) {
+            $("#menu1").toggle();
+            $("#menu2").toggle();
+            $("#menu3").toggle();
+        }
     });
     $(".m3").click(function(){
-        $("#menu1").toggle();
-        $("#menu2").toggle();
-        $("#menu3").toggle();
+        if ($(window).width() <=450) {
+            $("#menu1").toggle();
+            $("#menu2").toggle();
+            $("#menu3").toggle();
+        }
     });
-
-    
-
 });
 
 </script>

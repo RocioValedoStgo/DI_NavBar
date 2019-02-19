@@ -13,6 +13,10 @@
             height: 100%;
         }
 
+        .barrita {
+            display: none;
+        }
+
         ul.sidenav {
             list-style-type: none;
             margin: 0;
@@ -88,6 +92,16 @@
             /* width: 360px;  */
             height: 360px;
         }
+
+        .barrita {
+            display: block;
+            text-decoration: none;
+            float: left;
+            color: black;
+            background-color: #f1f1f1;
+            padding: 2px 16px;
+        }
+
         }
     </style>
 <head>
@@ -99,6 +113,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
+
+    <a href="javascript:;" class="barrita">☰</a>
+
 <ul class="sidenav">
     <li> <a id="menu1" href="javascript:;" click="menu1()"> Menu 1 </a> </li>
     <li> <a id="menu2" href="javascript:;" > Menu 2</a> </li>

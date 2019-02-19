@@ -94,12 +94,16 @@
         }
 
         .barrita {
-            display: block;
+            display: inline-block;
             text-decoration: none;
-            float: left;
             color: black;
             background-color: #f1f1f1;
             padding: 2px 16px;
+        }
+
+        .barrita:hover, .barrita.activar {
+            text-decoration: none;
+            color:teal;
         }
 
         }
@@ -114,7 +118,7 @@
 
 <body>
 
-    <a href="javascript:;" class="barrita">☰</a>
+    <a href="javascript:;" class="barrita" >☰</a>
 
 <ul class="sidenav">
     <li> <a id="menu1" href="javascript:;" click="menu1()"> Menu 1 </a> </li>
@@ -163,6 +167,11 @@ $(document).ready(function(){
     $("#contenido3").removeClass("oculto")
     $("#contenido1").addClass("oculto")
     $("#contenido2").addClass("oculto")
+  });
+
+  $(".barrita").click(function() {
+        $(this).toggleClass("activar");
+        $("ul.sidenav").toggleClass("activar");
   });
 });
 
